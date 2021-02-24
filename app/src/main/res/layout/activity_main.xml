@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.mtjsoft.www.gridpager.GridPager
+        android:id="@+id/gridpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:verticalSpacing="10dp"
+        app:img_width="50dp"
+        app:img_height="50dp"
+        app:text_color="@color/black"
+        app:text_size="4dp"
+        app:imgtext_margin="5dp"
+        app:row_count="2"
+        app:column_count="4"
+        app:point_width="15dp"
+        app:point_height="2dp"
+        app:point_is_circle="false"
+        app:point_margin="3dp"
+        app:point_normal_color="@color/black"
+        app:point_select_color="@color/teal_700"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </cn.mtjsoft.www.gridpager.GridPager>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示："
+        app:layout_constraintTop_toBottomOf="@+id/gridpager"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
